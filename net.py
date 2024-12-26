@@ -54,8 +54,8 @@ def my_script():
 
         net_connect.disconnect()
 
-# Schedule the function to run weekly on a specific day and time
-schedule.every().sunday.at("10:00").do(my_script)  # Adjust day and time
+# Schedule the function to run dayly on a specific time  
+schedule.every().day.at("10:00").do(my_script) # Adjust day and time
 
 print("Scheduler running... Press Ctrl+C to exit.")
 while True:
